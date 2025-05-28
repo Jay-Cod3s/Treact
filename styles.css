@@ -83,6 +83,7 @@ section {
 
 .nav__link:hover, .footer__link:hover {
   color: plum;
+  transition: all 300ms;
 }
 
 #footer__link--subtitle:hover {
@@ -102,6 +103,9 @@ nav {
 .nav__container {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .nav__logo{
@@ -204,8 +208,10 @@ button:active {
 .header__email--btn {
   float: right;
   position: relative;
-  top: -54px;
-  left: -3%
+  top: -59px;
+  left: -1.5%;
+  padding: 14px 32px;
+  display: flex;
 }
 
 .header__customers--title {
@@ -361,6 +367,8 @@ button:active {
 .step__title {
   font-weight: 600;
   font-size: 24px;
+  color: #243e63;
+  line-height: 1;
 }
 
 .step__description {
@@ -718,7 +726,10 @@ button:active {
 }
 
 #contact__us .row {
-  width: 95%;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0px 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -829,14 +840,32 @@ footer {
 }
 
 #social {
-  color: #cfd1d3;
-  margin-left: 24px; 
+  margin-left: 16px;
+  padding: 8px;
+  color:#243e63;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color:#f7fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 300ms;
 }
 
 #social:hover {
-  color: black;
-  cursor: pointer;
+  color: #cbd5e0;
+  transition: opacity all 300ms ease;
+  opacity: 1;
+  transform: translateY(2px);
 }
+
+.social__links {
+  display: flex;
+}
+
+
 
 
 /*Tablets, large smartphones*/
@@ -930,7 +959,6 @@ footer {
       flex-direction: column;
       align-items: center;
       text-align: center;
-      margin: 32px;
     }
 
     .feature__img--wrapper {
